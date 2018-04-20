@@ -549,7 +549,7 @@ class AuthFlarum extends AuthPlugin implements iAuthPlugin
     // Don't authenticate off any other tables
     public function strict()
     {
-        return true;
+        return false;
     }
 
 
