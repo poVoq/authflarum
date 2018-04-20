@@ -162,6 +162,7 @@ class AuthFlarum extends AuthPlugin implements iAuthPlugin
         $sqlStatement->bind_result($resultID, $resultUsername, $resultPassword);
 
         while($sqlStatement->fetch())
+        {
             // Test password
             if(password_verify($password, $resultPassword) && $this->isMemberOfWikiGroup($username))
             {
