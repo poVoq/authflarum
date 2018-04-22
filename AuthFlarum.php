@@ -18,12 +18,13 @@
  */
 
 // Ensure class and interface are defined.
+/** ERROR causes issues with update.php, add to local settings instead
 if (!class_exists('AuthPlugin') || !interface_exists('iAuthPlugin'))
 {
     require_once './includes/AuthPlugin.php';
     require_once './extensions/AuthFlarum/iAuthPlugin.php';
 }
-
+ */
 
 /**
  * Authenticate against a Flarum database.
