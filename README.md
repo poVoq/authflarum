@@ -53,4 +53,5 @@ This is not recommended unless you have an already configured admin user ;)
 * It only checks for the specified group but doesn't seem to actually transfer groups from Flarum to MediaWiki
 * Due to using the old AuthPlugin.php method the above error messages seem broken in MediaWiki 1.30
 * This plugin probably needs a rewrite at some point as it still uses the depreciated AuthPlugin.php methode
+* The code in the plugin to pull the email adresses doesn't seem to work
 
