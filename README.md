@@ -15,6 +15,9 @@ Move AuthFlarum.php and iAuthPlugin.php into a "AuthFlarum" folder in your Media
 Add the following to your LocalSettings.php
 
 ```
+#FlarumAuth plugin (uses old AuthPlugin system)
+require_once "$IP/includes/AuthPlugin.php"; //Workaround
+require_once "$IP/extensions/AuthFlarum/iAuthPlugin.php"; //Workaround
 require_once( "$IP/extensions/AuthFlarum/AuthFlarum.php" );
 $wgAuth = new AuthFlarum(
 $aConfig = array( 
